@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ScriBBler</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/index.css">
+    <script src="../scripts/index.js"></script> <!-- Corrected the script tag -->
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            ScriBBler
+        </div>
+        <div class="subheading">
+            Explore, Imagine, Create
+        </div>
+        <div class="buttons">
+            <button class="signup-btn">Sign Up</button>
+            <button class="signin-btn">Sign In</button>
+        </div>
+    </header>
+    
+
+    <section class="buttons-section">
+        <button class="all-posts-btn">All Posts</button>
+        <button class="create-post-btn">Create Post</button>
+    </section>
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Get Started</h2>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="signupName">Name:</label>
+                    <input type="text" id="signupName" placeholder="Enter your name">
+                </div>
+                <div class="input-group">
+                    <label for="signupUsername">Username:</label>
+                    <input type="text" id="signupUsername" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <label for="signupPassword">Password:</label>
+                    <input type="password" id="signupPassword" placeholder="Enter your password">
+                </div>
+                <div class="input-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" placeholder="Re-enter your password">
+                </div>
+                <button class="modal-signup-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+
+    <div id="signinModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Welcome Back!</h2>
+            <form id="signInForm">
+                <div class="input-group">
+                    <input type="text" id="signinUsername" placeholder="Enter your username">
+                </div>
+                <div class="input-group">
+                    <input type="password" id="signinPassword" placeholder="Enter your password">
+                </div>
+                <button class="modal-signin-btn">Sign In</button>
+            </form>
+            <div class="signup-text">Not a member? <a href="#" id="signupLink">Sign Up</a></div>
+        </div>
+    </div>
+
+    <div id="createPostModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Pen Your Post</h2>
+            <form id="createPostForm">
+                <div class="input-group">
+                    <label for="postTitle">Title:</label>
+                    <input type="text" id="postTitle" placeholder="Enter title of your post">
+                </div>
+                <div class="input-group">
+                    <label for="postContent">Contents:</label>
+                    <textarea id="postContent" placeholder="Enter the contents of your post"></textarea>
+                </div>
+                <button class="create-btn">Create</button>
+            </form>
+        </div>
+    </div>
+    
+
+<div id="allPostsModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>All Posts</h2>
+        <div class="posts-container">
+            
+        </div>
+    </div>
+</div>
+
+    
+</body>
+
+</html>

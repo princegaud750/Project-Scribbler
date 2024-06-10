@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post - ScriBBler</title>
+    
+    <link rel="stylesheet" href="../styles/post.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">ScriBBler</div>
+            <div class="subheading">Explore, Imagine, Create</div>
+        </div>
+        <div class="buttons">
+            <button class="signin-btn">Sign In</button>
+            <button class="signup-btn">Sign Up</button>
+        </div>
+    </header>
+
+    <section class="post-section">
+        <h1 class="post-title" id="post-title">Post Title</h1>
+        <div class="post-author-edit">
+            <p class="post-author" id="post-author">Author Name</p>
+            <button class="edit-btn" id="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+            <button class="save-btn" id="save-btn"><i class="fas fa-save"></i> Save</button>
+        </div>
+        <p class="post-content" id="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <button class="like-btn" id="like-btn"><i class="fas fa-thumbs-up"></i> Like</button>
+        <p class="like-status" id="like-status">Be the first one to like this!</p>
+        <input type="text" class="comment-input" id="comment-input" placeholder="Leave a comment...">
+        <button class="comment-btn" id="comment-btn">Comment</button>
+        <div class="comments-section" id="comments-section">
+            <h2>All Comments</h2>
+            <div class="comments-list" id="comments-list"></div>
+        </div>
+    </section>
+
+    
+    <script src="../scripts/post.js"></script>
+</body>
+</html>

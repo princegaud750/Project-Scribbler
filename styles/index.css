@@ -1,0 +1,233 @@
+/* Resetting default margin and padding */
+body,
+header,
+section {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+html, body  {
+    height: 100%;
+    font-family: Arial, sans-serif; /* fallback font */
+}
+
+html {
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    background-color: transparent; /* Adding opacity to make the text more readable */
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1; /* Ensure header is above background image */
+}
+
+.logo {
+    font-family: 'Montez', cursive;
+    font-size: 32px;
+    color: blue;
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.subheading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    margin-top: 56px;
+    margin-left: -110px;
+}
+
+.buttons {
+    margin-left: auto; /* Push buttons to the right */
+}
+
+.signup-btn,
+.signin-btn {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+    
+}
+
+/* Buttons section styles */
+.buttons-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.all-posts-btn,
+.create-post-btn {
+    background-color:rgb(242, 188, 87);
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+
+    cursor: pointer;
+    margin-right: 10px;
+    margin-top: 235px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box-shadow */
+    transition: transform 0.3s ease; /* Add transition effect */
+}
+
+.all-posts-btn:hover,
+.create-post-btn:hover {
+    background-color: orange;
+    transform: translateY(-2px); /* Add hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add hover effect */
+}
+
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust the width of the modal */
+    max-width: 400px; /* Set a maximum width */
+    position: relative;
+}
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    padding: 15px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.Post-modal-content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Adjust the width of the modal */
+    max-width: 805px;
+    max-height: 578px; /* Set a maximum width */
+    position: relative;
+}
+/* Style for text area */
+textarea {
+    width: calc(100% - 22px); /* Subtract space for scrollbar */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8); /* Set input background color */
+    height: 150px; /* Adjust the height of the textarea */
+}
+
+h2 {
+    border-bottom: 1px solid #ccc; /* Add a line under the heading */
+    padding-bottom: 10px; /* Add some padding below the heading */
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left; /* Align labels and inputs to the left */
+}
+
+.input-group label {
+    display: block; /* Make labels display in block form */
+    margin-bottom: 5px; /* Add some space between labels and inputs */
+}
+
+/* Adjust input width to make room for labels */
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 22px); /* Subtract space for scrollbar */
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8); /* Set input background color */
+}
+
+/* Style for Sign Up button inside the modal */
+.modal-signup-btn {
+    width: 100%; /* Make button width equal to the modal width */
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-signup-btn:hover {
+    background-color: darkgreen;
+}
+
+
+/* Same as previous modal CSS */
+.signup-text {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.signup-text a {
+    color: black;
+    text-decoration: none;
+}
+
+.signup-text a:hover {
+    text-decoration: underline;
+}
+.modal-signin-btn {
+    width: 100%; /* Make button width equal to the modal width */
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-signin-btn:hover {
+    background-color: darkgreen;
+}
+#signupLink{
+    color: blue;
+}
+
+.centered-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.create-btn{
+    width: 100%; /* Make button width equal to the modal width */
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

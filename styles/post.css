@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: transparent;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Montez', cursive;
+    font-size: 32px;
+    color: blue;
+}
+
+.subheading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    
+    margin-top: -10px;
+}
+
+.buttons {
+    margin-left: auto;
+}
+
+.signin-btn, .signup-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.post-section {
+    max-width: 1445px;
+    margin: 0 auto;
+}
+
+.post-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.post-author-edit {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.post-author {
+    font-size: 16px;
+}
+
+.edit-btn, .save-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.save-btn {
+    display: none;
+}
+
+.post-content {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.post-content.editable {
+    border: 1px solid pink;
+    padding: 10px;
+}
+
+.like-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.like-status {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+.comment-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.comment-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comments-section {
+    margin-top: 20px;
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 10px;
+    width: 97%;
+}
+
+.comments-list {
+    margin-top: 10px;
+}
+
+.comment {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
